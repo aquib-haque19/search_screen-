@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+<body>
+    <i class="search-icon fa fa-search"></i>
+    <div class="search-screen">
+        <i class="close-icon fa fa-times"></i>
+        <input type="text" class="search-box" placeholder="Write Something!">
+    </div>
+
+    <script>
+        document.querySelector(".search-icon").addEventListener('click', function() {
+            document.querySelector(".search-screen").classList.add("active");
+        });
+
+        document.querySelector(".close-icon").addEventListener('click', function() {
+            document.querySelector(".search-screen").classList.remove("active");
+        });
+    </script>
+
+
+    <footer class="page-footer">© 2020 Copyright: Aquib Haque. </footer>
+
+
+
+</body>
+
+</html>

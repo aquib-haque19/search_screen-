@@ -1,0 +1,95 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", cursive, sans-serif;
+    }
+    
+    body {
+        background: url(hill.jpg) no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .search-icon {
+        width: 80px;
+        height: 80px;
+        background-color: #b1cd32;
+        text-align: center;
+        line-height: 80px !important;
+        color: #470c29;
+        font-size: 30px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: .3s linear;
+    }
+    
+    .search-icon:hover {
+        border-radius: 30%;
+        background-color: #9ab90e;
+        color: #131010;
+    }
+    
+    .search-screen {
+        position: fixed;
+        width: 0;
+        height: 100%;
+        background-color: #000000dd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        overflow: hidden;
+        transition: .3s linear .3s;
+    }
+    
+    .close-icon {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        color: #db0e0e;
+        font-size: 30px;
+        cursor: pointer;
+        opacity: 0;
+    }
+    
+    .search-box {
+        width: 90%;
+        max-width: 600px;
+        height: 60px;
+        background: none;
+        border: none;
+        outline: none;
+        color: #6e6e6c;
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        opacity: 0;
+    }
+    
+    .search-screen.active {
+        transition-delay: 0s;
+        width: 100%;
+    }
+    
+    .search-screen.active .search-box,
+    .search-screen.active .close-icon {
+        transition: .2s linear .4s;
+        opacity: 1;
+    }
+    
+    .page-footer {
+        width: 100%;
+        padding: 5px;
+        position: fixed;
+        left: auto;
+        bottom: 10px;
+        background-color: #000000dd;
+        color: #d8f820de;
+        text-align: center;
+    }
